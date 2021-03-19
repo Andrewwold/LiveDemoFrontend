@@ -42,6 +42,18 @@ export default class App extends Component {
           <input type="text" name="id" value={this.state.id} onChange={this.handleChange} />
           <input type="submit" value="submit" />
         </form>
+        <div>
+          <h3>Available Slugs</h3>
+          <div>people, planets, starships</div>
+        </div>
+        <h1>{this.state.apiData.name}</h1>
+        <div class="info-wraper">
+          {Object.keys(this.state.apiData).length ? Object.keys(this.state.apiData).map((key, index) => (
+           <div> 
+             <p>{key}: {this.state.apiData[key]}  </p>
+           </div> 
+          )) : null}
+        </div>
         <h1>{console.log(this.state.apiData)}</h1>
       </div>
     );

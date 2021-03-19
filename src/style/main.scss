@@ -19,10 +19,21 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://media.gettyimages.com/photos/filmmaker-george-lucas-star-wars-character-wicket-the-ewok-attends-picture-id71938184?k=6&m=71938184&s=612x612&w=0&h=ZF24YvODDOsOtOWmS24CeDxK76l8Yw0k6bQLqrfJtNs=);
+    background-position: center top;
+    background-size: 100% auto;
 }
 
 .app {
     margin-top: 2rem;
     display: grid;
     justify-items: center;
+}
+
+.info-wraper {
+    background-color: rgba(255,255,204,0.8);
+    width: 30vw;
+    border-radius: 10px;
 }
